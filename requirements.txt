@@ -4,3 +4,7 @@ transformers
 einops
 opencv-python
 xformers
+numpy
+torch
+scipy
+Pillow
