@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y \
     git \
     wget \
     libgl1 \
+    libglib2.0-0 \  # <-- вот сюда!
+    libglib2.0-dev \  # <-- вот сюда!
     && ln -sf /usr/bin/python3.10 /usr/bin/python \
     && ln -sf /usr/bin/pip3 /usr/bin/pip
 
