@@ -11,9 +11,6 @@ rm -rf /comfyui/custom_nodes && ln -s /runpod-volume/ComfyUI/custom_nodes /comfy
 # Заменяем input (чтобы видеть mask.png и face.png)
 rm -rf /comfyui/input && ln -s /runpod-volume/ComfyUI/input /comfyui/input
 
-# Заменяем output (чтобы результат сохранялся туда)
-rm -rf /comfyui/output && ln -s /runpod-volume/ComfyUI/output /comfyui/output
-
 # --- КОНЕЦ ДОБАВЛЕНИЯ --- #
 
 # Use libtcmalloc for better memory management
