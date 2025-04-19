@@ -5,6 +5,8 @@
 # Заменяем модели на те, что в томе
 rm -rf /comfyui/models && ln -s /runpod-volume/ComfyUI/models /comfyui/models
 
+# Заменяем кастомные ноды
+rm -rf /comfyui/custom_nodes && ln -s /runpod-volume/ComfyUI/custom_nodes /comfyui/custom_nodes
 
 # Заменяем input (чтобы видеть mask.png и face.png)
 rm -rf /comfyui/input && ln -s /runpod-volume/ComfyUI/input /comfyui/input

@@ -35,6 +35,12 @@ WORKDIR /comfyui
 # Install runpod
 RUN pip install runpod requests
 
+# Копируем requirements.txt
+COPY requirements.txt /comfyui/requirements.txt
+
+# Устанавливаем все зависимости
+RUN pip install --no-cache-dir -r /comfyui/requirements.txt
+
 # Support for the network volume
 ADD src/extra_model_paths.yaml ./
 
